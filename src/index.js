@@ -1,5 +1,3 @@
-console
-  .log(
-    "Hello" + 'world!'
-  )
-;
+export default function floor(val) {
+  return Math.floor(val);
+}

@@ -1,11 +1,14 @@
 {
-  "name": "videx-math",
-  "version": "1.0.0",
+  "name": "@equinor/videx-math",
+  "version": "1.0.1",
   "description": "A library with math used by Videx.",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
+    "prepub": "npm run build",
+    "pub": "npm publish --access=public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
