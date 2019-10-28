@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 
 export default {
   input: 'src/index.js',
@@ -12,11 +13,17 @@ export default {
       file: 'dist/bundle.esm.js',
       format: 'esm',
     },
+    {
+      name: 'videxMath',
+      file: 'dist/bundle.umd.js',
+      format: 'umd',
+    },
   ],
   plugins: [
     resolve(),
     babel({
       exclude: 'node_modules/**',
     }),
+    terser(),
   ],
 };

@@ -1,6 +1,6 @@
 {
   "name": "@equinor/videx-math",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A library with math used by Videx.",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -33,6 +33,7 @@
     "rimraf": "^3.0.0",
     "rollup": "^1.26.0",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
   }
 }
