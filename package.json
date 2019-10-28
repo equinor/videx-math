@@ -1,0 +1,20 @@
+{
+  "name": "videx-math",
+  "version": "1.0.0",
+  "description": "A library with math used by Videx.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/equinor/videx-math.git"
+  },
+  "keywords": ["math"],
+  "author": "Tom Kristian Tjemsland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/equinor/videx-math/issues"
+  },
+  "homepage": "https://github.com/equinor/videx-math#readme"
+}
