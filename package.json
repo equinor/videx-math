@@ -10,11 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/equinor/videx-math.git"
   },
-  "keywords": ["math"],
+  "keywords": [
+    "math"
+  ],
   "author": "Tom Kristian Tjemsland",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/equinor/videx-math/issues"
   },
-  "homepage": "https://github.com/equinor/videx-math#readme"
+  "homepage": "https://github.com/equinor/videx-math#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
