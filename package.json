@@ -4,6 +4,7 @@
   "description": "A library with math used by Videx.",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +25,7 @@
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "rimraf": "^3.0.0",
     "rollup": "^1.26.0"
   }
 }
