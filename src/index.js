@@ -3,8 +3,8 @@ import { RAD2DEG, DEG2RAD, TAU } from './const';
 /**
  * Clamps the value to min or max if value is less than min or greater than max.
  * @param {number} value Value to clamp
- * @param {number} [min] Minimum value (Default: 0)
- * @param {number} [max] Maximum value (Default: 1)
+ * @param {number} [min=0] Minimum value (Default: 0)
+ * @param {number} [max=1] Maximum value (Default: 1)
  * @return {number} Clamped value
  */
 export function clamp(value, min, max) {
@@ -41,7 +41,7 @@ export function lerp(a, b, t) {
 /**
  * Rounds a number to the specific number of digits.
  * @param {number} value Value to round
- * @param {number} [digits] Number of digits (Default: 1)
+ * @param {number} [digits=1] Number of digits (Default: 1)
  * @return {number} Rounded value
  */
 export function round(value, digits) {
