@@ -9,7 +9,7 @@
     "build": "rollup -c",
     "prepub": "npm run build",
     "pub": "npm publish --access=public",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "repository": {
@@ -27,11 +27,13 @@
   "homepage": "https://github.com/equinor/videx-math#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
     "docdash": "^1.1.1",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
     "jsdoc": "^3.6.3",
     "rimraf": "^3.0.0",
     "rollup": "^1.26.0",

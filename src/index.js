@@ -28,10 +28,10 @@ export function smoothstep(a, b, x) {
 
 /**
  * Linear interpolation between two numbers.
- * @param {number} a Number to interpolate from
- * @param {number} b Number to interpolate to
- * @param {number} t Interpolation parameter, 0 = a and 1 = b
- * @return {number} The interpolated value
+ * @param {Number} a Number to interpolate from
+ * @param {Number} b Number to interpolate to
+ * @param {Number} t Interpolation parameter, 0 = a and 1 = b
+ * @return {Number} The interpolated value
  */
 export function lerp(a, b, t) {
   const m = clamp(t, 0, 1);
@@ -40,9 +40,9 @@ export function lerp(a, b, t) {
 
 /**
  * Rounds a number to the specific number of digits.
- * @param {number} value Value to round
- * @param {number} [digits=1] Number of digits (Default: 1)
- * @return {number} Rounded value
+ * @param {Number} value Value to round
+ * @param {Number} [digits=1] Number of digits (Default: 1)
+ * @return {Number} Rounded value
  */
 export function round(value, digits) {
   if (digits === undefined) digits = 1;
@@ -52,8 +52,8 @@ export function round(value, digits) {
 
 /**
  * Convert degrees to radians.
- * @param {number} deg Angle in degrees
- * @returns {number} Angle in radians
+ * @param {Number} deg Angle in degrees
+ * @returns {Number} Angle in radians
  */
 export function radians(deg) {
   return deg * DEG2RAD;
@@ -61,8 +61,8 @@ export function radians(deg) {
 
 /**
  * Convert radians to degrees.
- * @param {number} rad Angle in radians
- * @returns {number} Angle in degrees
+ * @param {Number} rad Angle in radians
+ * @returns {Number} Angle in degrees
  */
 export function degrees(rad) {
   return rad * RAD2DEG;
@@ -70,8 +70,8 @@ export function degrees(rad) {
 
 /**
  * Normalise an angle to be between -PI to +PI.
- * @param {number} r Angle in radians
- * @return {number} Normalised angle
+ * @param {Number} r Angle in radians
+ * @return {Number} Normalised angle
  */
 export function nrad(r) {
   const v = r % TAU;
