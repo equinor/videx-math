@@ -20,7 +20,7 @@ Available functions:
   }
 </style>
 
-<div id=functions>
+<div style="width:400px;display:flex;flex-flow:row wrap;">
   <a href="https://equinor.github.io/videx-math/global.html#clamp">clamp</a>
   <a href="https://equinor.github.io/videx-math/global.html#degrees">degrees</a>
   <a href="https://equinor.github.io/videx-math/global.html#lerp">lerp</a>
