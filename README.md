@@ -5,7 +5,24 @@ A library with math functions used by Videx.
 - [GitHub Repository](https://github.com/equinor/videx-math)
 - [Documentation](https://equinor.github.io/videx-math)
 
-Available functions:
+## Installation
+```js
+npm install --save @equinor/videx-math
+```
+
+## Usage
+
+```js
+// es6
+import { clamp, lerp, ... } from '@equinor/videx-math';
+
+// ObservableHQ
+const someVar = require('@equinor/videx-math@X.X.X/dist/bundle.umd.js');
+const lerp = someVar.lerp;
+```
+where X.X.X is desired version number.
+
+## Available functions
 
 <table style="width:auto;">
   <tr>
