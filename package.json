@@ -11,7 +11,8 @@
     "pub": "npm publish --access=public",
     "test": "jest",
     "predocs": "rimraf docs",
-    "docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+    "docs": "node_modules/.bin/jsdoc -c jsdoc.json",
+    "postdocs": "copyfiles images/* docs"
   },
   "repository": {
     "type": "git",
