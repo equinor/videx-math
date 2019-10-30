@@ -6,6 +6,10 @@ import { RAD2DEG, DEG2RAD, TAU } from './const';
  * @param {Number} [min=0] Minimum value (Default: 0)
  * @param {Number} [max=1] Maximum value (Default: 1)
  * @return {Number} Clamped value
+ *
+ * @example
+ * // Returns 7
+ * clamp(8, 3, 7);
  */
 export function clamp(value, min, max) {
   if (min === undefined) min = 0;
@@ -43,6 +47,10 @@ export function smoothstep(edge0, edge1, x) {
  * @param {Number} b Number to interpolate to
  * @param {Number} t Interpolation parameter, 0 = a and 1 = b
  * @return {Number} The interpolated value
+ *
+ * @example
+ * // Returns 3
+ * lerp(2, 4, 0.5);
  */
 export function lerp(a, b, t) {
   const m = clamp(t, 0, 1);
@@ -54,6 +62,10 @@ export function lerp(a, b, t) {
  * @param {Number} value Value to round
  * @param {Number} [digits=1] Number of digits (Default: 1)
  * @return {Number} Rounded value
+ *
+ * @example
+ * // Returns 3.142
+ * round(Math.PI, 3);
  */
 export function round(value, digits) {
   if (digits === undefined) digits = 1;
@@ -65,6 +77,10 @@ export function round(value, digits) {
  * Convert degrees to radians.
  * @param {Number} deg Angle in degrees
  * @returns {Number} Angle in radians
+ *
+ * @example
+ * // Returns π / 2
+ * radians(90);
  */
 export function radians(deg) {
   return deg * DEG2RAD;
@@ -74,6 +90,10 @@ export function radians(deg) {
  * Convert radians to degrees.
  * @param {Number} rad Angle in radians
  * @returns {Number} Angle in degrees
+ *
+ * @example
+ * // Returns 180
+ * degrees(Math.PI);
  */
 export function degrees(rad) {
   return rad * RAD2DEG;
