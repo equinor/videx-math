@@ -10,6 +10,7 @@
     "prepub": "npm run build",
     "pub": "npm publish --access=public",
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "predocs": "rimraf docs",
     "docs": "node_modules/.bin/jsdoc -c jsdoc.json",
     "postdocs": "copyfiles images/* docs"
