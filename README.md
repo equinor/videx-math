@@ -20,7 +20,7 @@ import { clamp, lerp, ... } from '@equinor/videx-math';
 const someVar = require('@equinor/videx-math@X.X.X/dist/bundle.umd.js');
 const lerp = someVar.lerp;
 ```
-where X.X.X is desired version number.
+Where X.X.X is desired version number.
 
 ## Available functions
 
