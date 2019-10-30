@@ -13,7 +13,7 @@ npm install --save @equinor/videx-math
 ## Usage
 
 ```js
-// es6
+// ES6
 import { clamp, lerp, ... } from '@equinor/videx-math';
 
 // ObservableHQ
