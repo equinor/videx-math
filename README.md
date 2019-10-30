@@ -7,6 +7,14 @@ A library with math functions used by Videx.
 
 Available functions:
 
+<table style="width:auto">
+  <tr>
+    <td><a href="https://equinor.github.io/videx-math/global.html#clamp">clamp</a></td>
+    <td><a href="https://equinor.github.io/videx-math/global.html#degrees">degrees</a></td>
+    <td><a href="https://equinor.github.io/videx-math/global.html#lerp">lerp</a></td>
+  </tr>
+</table>
+
 <div style="width:400px;display:flex;flex-flow:row wrap;">
   <a style="margin:5px;padding:10px;outline:1px solid black;" href="https://equinor.github.io/videx-math/global.html#clamp">clamp</a>
   <a style="margin:5px;padding:10px;outline:1px solid black;" href="https://equinor.github.io/videx-math/global.html#degrees">degrees</a>
