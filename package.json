@@ -10,7 +10,8 @@
     "prepub": "npm run build",
     "pub": "npm publish --access=public",
     "test": "jest",
-    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+    "predocs": "rimraf docs",
+    "docs": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
+    "copyfiles": "^2.1.1",
     "docdash": "^1.1.1",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
