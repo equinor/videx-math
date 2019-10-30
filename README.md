@@ -1,5 +1,6 @@
 # videx-math
 A library with math used by Videx.
 
-Documentation:
-https://equinor.github.io/videx-math/
+Documentation can be found [here](https://equinor.github.io/videx-math/).
+
+![Equinor Logo](../images/equinor-logo.png)
