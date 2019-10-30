@@ -1,17 +1,25 @@
 /* eslint-disable no-undef */
 import {
   clamp,
+  step,
   smoothstep,
   lerp,
   round,
   radians,
   degrees,
   nrad,
+  seq,
+  seqI,
 } from '../src/index';
 
 test('clamp', () => {
   expect(clamp(2)).toBe(1);
   expect(clamp(0, 10, 20)).toBe(10);
+});
+
+test('step', () => {
+  expect(step(1, 2)).toBe(1);
+  expect(step(1, 0.5)).toBe(0);
 });
 
 test('smoothstep', () => {
@@ -47,4 +55,14 @@ test('degrees', () => {
 test('nrad', () => {
   expect(nrad(-Math.PI)).toBe(Math.PI);
   expect(nrad(0)).toBe(0);
+});
+
+test('seq', () => {
+  expect(seq(2, 4, 5)).toEqual([2, 2.5, 3, 3.5, 4]);
+  expect(seq(-1, 1, 2)).toEqual([-1, 1]);
+});
+
+test('seqI', () => {
+  expect(seqI(2)).toEqual([0, 1]);
+  expect(seqI(5)).toEqual([0, 0.25, 0.5, 0.75, 1]);
 });
