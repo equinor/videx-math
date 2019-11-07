@@ -26,20 +26,20 @@ Where X.X.X is desired version number.
 
 <table style="width:auto;">
   <tr>
-    <td><a href="https://equinor.github.io/videx-math/global.html#clamp">clamp</a></td>
-    <td><a href="https://equinor.github.io/videx-math/global.html#degrees">degrees</a></td>
-    <td><a href="https://equinor.github.io/videx-math/global.html#lerp">lerp</a></td>
-    <td><a href="https://equinor.github.io/videx-math/global.html#nrad">nrad</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#clamp">clamp</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#degrees">degrees</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#lerp">lerp</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#nrad">nrad</a></td>
   </tr>
   <tr>
-    <td><a href="https://equinor.github.io/videx-math/global.html#radians">radians</a></td>
-    <td><a href="https://equinor.github.io/videx-math/global.html#round">round</a></td>
-    <td><a href="https://equinor.github.io/videx-math/global.html#seq">seq</a></td>
-    <td><a href="https://equinor.github.io/videx-math/global.html#seqI">seqI</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#radians">radians</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#round">round</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#seq">seq</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#seqI">seqI</a></td>
   </tr>
   <tr>
-    <td><a href="https://equinor.github.io/videx-math/global.html#smoothstep">smoothstep</a></td>
-    <td><a href="https://equinor.github.io/videx-math/global.html#step">step</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#smoothstep">smoothstep</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#step">step</a></td>
   </tr>
 </table>
 
