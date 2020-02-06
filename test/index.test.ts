@@ -10,6 +10,10 @@ import {
   nrad,
   seq,
   seqI,
+  min,
+  max,
+  extent,
+  mean,
 } from '../src/index';
 
 test('clamp', () => {
@@ -65,4 +69,25 @@ test('seq', () => {
 test('seqI', () => {
   expect(seqI(2)).toEqual([0, 1]);
   expect(seqI(5)).toEqual([0, 0.25, 0.5, 0.75, 1]);
+});
+
+test('min', () => {
+  expect(min(2, 1, 3)).toEqual(1);
+  expect(min([4, 2, 5, 8, 7])).toEqual(2);
+});
+
+test('max', () => {
+  expect(max(2, 1, 3)).toEqual(3);
+  expect(max([4, 2, 5, 8, 7])).toEqual(8);
+});
+
+test('extent', () => {
+  expect(extent(2, 1, 3)).toEqual([1, 3]);
+  expect(extent([4, 2, 5, 8, 7])).toEqual([2, 8]);
+});
+
+test('mean', () => {
+  expect(mean(2, 1, 3)).toEqual(2);
+  expect(mean([2, 1, 3])).toEqual(2);
+  expect(mean(1, 2, 3, 4)).toEqual(2.5);
 });
