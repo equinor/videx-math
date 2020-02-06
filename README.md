@@ -28,7 +28,13 @@ Where X.X.X is desired version number.
   <tr>
     <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#clamp">clamp</a></td>
     <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#degrees">degrees</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#extent">extent</a></td>
     <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#lerp">lerp</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#max">max</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#mean">mean</a></td>
+    <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#min">min</a></td>
     <td><a href="https://equinor.github.io/videx-math/modules/_index_.html#nrad">nrad</a></td>
   </tr>
   <tr>
