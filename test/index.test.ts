@@ -4,6 +4,7 @@ import {
   step,
   smoothstep,
   lerp,
+  inverseLerp,
   round,
   radians,
   degrees,
@@ -36,6 +37,12 @@ test('lerp', () => {
   expect(lerp(0, 10, 0)).toBe(0);
   expect(lerp(0, 10, 1)).toBe(10);
   expect(lerp(0, 10, 0.25)).toBe(2.5);
+});
+
+test('inverseLerp', () => {
+  expect(inverseLerp(0, 10, 5)).toBe(0.5);
+  expect(inverseLerp(0, 10, 2.5)).toBe(0.25);
+  expect(inverseLerp(0, 20, 15)).toBe(0.75);
 });
 
 test('round', () => {

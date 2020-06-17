@@ -1,6 +1,6 @@
 {
   "name": "@equinor/videx-math",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "A library with math used by Videx.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

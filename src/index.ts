@@ -54,6 +54,21 @@ export function lerp(a: number, b: number, t: number): number {
 }
 
 /**
+ * Get the interpolant [t] that produces given value within the range [a, b].
+ * @param a Start value
+ * @param b End value
+ * @param value Value between start and end
+ * @return Percentage of value between start and end
+ *
+ * @example
+ * inverseLerp(2, 4, 3); // Returns 0.5
+ */
+export function inverseLerp(a: number, b: number, value: number): number {
+  const t = (value - a) / (b - a);
+  return clamp(t, 0, 1);
+}
+
+/**
  * Rounds number to a specific amount of digits.
  * @param value Value to round
  * @param digits Number of digits (Default: 1)
