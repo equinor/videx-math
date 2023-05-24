@@ -47,7 +47,7 @@
     "rollup-plugin-typescript2": "^0.25.3",
     "ts-jest": "^25.2.0",
     "typedoc": "^0.16.9",
-    "typescript": "^3.7.5"
+    "typescript": "^3.9.10"
   },
   "jest": {
     "transform": {
