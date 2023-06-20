@@ -1,6 +1,6 @@
 {
   "name": "@equinor/videx-math",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A library with math used by Videx.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -39,15 +39,15 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
-    "jest": "^25.1.0",
+    "jest": "^29.5.0",
     "rimraf": "^3.0.1",
     "rollup": "^1.31.0",
     "@rollup/plugin-node-resolve": "^8.0.1",
     "rollup-plugin-terser": "^5.2.0",
-    "rollup-plugin-typescript2": "^0.25.3",
-    "ts-jest": "^25.2.0",
-    "typedoc": "^0.16.9",
-    "typescript": "^3.7.5"
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-jest": "^29.1.0",
+    "typedoc": "^0.24.8",
+    "typescript": "^4.7.4"
   },
   "jest": {
     "transform": {
