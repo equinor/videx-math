@@ -1,4 +1,4 @@
-# Contributing to Videx Wellog
+# Contributing to Videx Math
 
 In general, we follow the "fork-and-pull" Git workflow.
 
