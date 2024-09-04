@@ -11,8 +11,12 @@ import { RAD2DEG, DEG2RAD, TAU } from './const';
  * clamp(8, 3, 7); // Returns: 7
  */
 export function clamp(value: number, min: number = 0, max: number = 1): number {
-  if (value < min) return min;
-  if (value > max) return max;
+  if (value < min) {
+    return min;
+  }
+  if (value > max) {
+    return max;
+  }
   return value;
 }
 
@@ -185,12 +189,16 @@ export function min(a: number | number[], ...b: number[]): number {
   if(Array.isArray(a)) {
     min = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] < min) min = a[i];
+      if (a[i] < min) {
+        min = a[i];
+      }
     }
   } else {
     min = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] < min) min = b[i];
+      if (b[i] < min) {
+        min = b[i];
+      }
     }
   }
   return min;
@@ -221,12 +229,16 @@ export function max(a: number | number[], ...b: number[]): number {
   if(Array.isArray(a)) {
     max = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] > max) max = a[i];
+      if (a[i] > max) {
+        max = a[i];
+      }
     }
   } else {
     max = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] > max) max = b[i];
+      if (b[i] > max) {
+        max = b[i];
+      }
     }
   }
   return max;
@@ -257,14 +269,22 @@ export function extent(a: number | number[], ...b: number[]): [number, number] {
   if(Array.isArray(a)) {
     min = max = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] < min) min = a[i];
-      if (a[i] > max) max = a[i];
+      if (a[i] < min) {
+        min = a[i];
+      }
+      if (a[i] > max) {
+        max = a[i];
+      }
     }
   } else {
     min = max = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] < min) min = b[i];
-      if (b[i] > max) max = b[i];
+      if (b[i] < min) {
+        min = b[i];
+      }
+      if (b[i] > max) {
+        max = b[i];
+      }
     }
   }
   return [min, max];
@@ -293,9 +313,13 @@ export function mean(...values: number[]): number
 export function mean(a: number | number[], ...b: number[]): number {
   let sum = 0;
   if(Array.isArray(a)) {
-    for (let i = 0; i < a.length; i++) sum += a[i];
+    for (let i = 0; i < a.length; i++) {
+      sum += a[i];
+    }
     return sum / a.length;
   }
-  for (let i = 0; i < b.length; i++) sum += b[i];
+  for (let i = 0; i < b.length; i++) {
+    sum += b[i];
+  }
   return (sum + a) / (b.length + 1);
 }
