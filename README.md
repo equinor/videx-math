@@ -1,3 +1,5 @@
+[![SCM Compliance](https://scm-compliance-api.radix.equinor.com/repos/equinor/videx-math/badge)](https://scm-compliance-api.radix.equinor.com/repos/equinor/videx-math/badge)
+
 # Videx math
 
 A library with math functions used by Videx.
