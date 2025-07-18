@@ -1,0 +1,50 @@
+version: 2
+updates:    
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "02:00"
+      timezone: Europe/Oslo
+    commit-message:
+      prefix: "[github-actions] "
+  
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "03:00"
+      timezone: Europe/Oslo
+    groups:
+      babel:
+        applies-to: version-updates
+        patterns:
+          - "@babel*"
+        update-types:
+          - "minor"
+          - "patch"
+      rollup:
+        applies-to: version-updates
+        patterns:
+          - "@rollup*"
+        update-types:
+          - "minor"
+          - "patch"
+      jest:
+        applies-to: version-updates
+        patterns:
+          - "jest*"
+        update-types:
+          - "minor"
+          - "patch"
+      eslint:
+        applies-to: version-updates
+        patterns:
+          - "eslint*"
+        update-types:
+          - "minor"
+          - "patch"
+    commit-message:
+      prefix: "[npm] "
