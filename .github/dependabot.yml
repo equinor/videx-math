@@ -1,5 +1,15 @@
 version: 2
-updates:      
+updates:    
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "02:00"
+      timezone: Europe/Oslo
+    commit-message:
+      prefix: "[github-actions] "
+  
   - package-ecosystem: npm
     directory: /
     schedule:
