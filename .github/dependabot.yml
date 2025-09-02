@@ -1,5 +1,5 @@
 version: 2
-updates:    
+updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -9,7 +9,7 @@ updates:
       timezone: Europe/Oslo
     commit-message:
       prefix: "[github-actions] "
-  
+
   - package-ecosystem: npm
     directory: /
     schedule:
@@ -17,34 +17,11 @@ updates:
       day: monday
       time: "03:00"
       timezone: Europe/Oslo
+    open-pull-requests-limit: 5
     groups:
-      babel:
+      all-version-updates:
         applies-to: version-updates
         patterns:
-          - "@babel*"
-        update-types:
-          - "minor"
-          - "patch"
-      rollup:
-        applies-to: version-updates
-        patterns:
-          - "@rollup*"
-        update-types:
-          - "minor"
-          - "patch"
-      jest:
-        applies-to: version-updates
-        patterns:
-          - "jest*"
-        update-types:
-          - "minor"
-          - "patch"
-      eslint:
-        applies-to: version-updates
-        patterns:
-          - "eslint*"
-        update-types:
-          - "minor"
-          - "patch"
+          - "**"
     commit-message:
       prefix: "[npm] "
