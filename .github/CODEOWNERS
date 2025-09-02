@@ -1,3 +1,4 @@
 * @equinor/viz
 
+/.github/ @equinor/rep-infra
 /.github/CODEOWNERS @equinor/rep-admin
