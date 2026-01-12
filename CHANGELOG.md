@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/equinor/videx-math/compare/v1.1.5...v1.1.6) (2026-01-12)
+
+
+### Bug Fixes
+
+* **110:** remove-npm-engine ([#112](https://github.com/equinor/videx-math/issues/112)) ([5792e70](https://github.com/equinor/videx-math/commit/5792e70d8aa6b33636f97d69a937b38d7fea5dc3))
+
 ## [1.1.5](https://github.com/equinor/videx-math/compare/v1.1.4...v1.1.5) (2026-01-06)
 
 
