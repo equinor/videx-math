@@ -9,7 +9,7 @@
     "dist"
   ],
   "engines": {
-    "npm": "^11.7.0"
+    "npm": ">=9.2"
   },
   "types": "dist/index.d.ts",
   "scripts": {
