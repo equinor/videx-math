@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.7](https://github.com/equinor/videx-math/compare/v1.1.6...v1.1.7) (2026-03-23)
+
+
+### Bug Fixes
+
+* **npm:** bump rollup from 3.29.5 to 3.30.0 ([#126](https://github.com/equinor/videx-math/issues/126)) ([d7af759](https://github.com/equinor/videx-math/commit/d7af759b8762ec9e695cfc688e8964011e3e3777))
+
 ## [1.1.6](https://github.com/equinor/videx-math/compare/v1.1.5...v1.1.6) (2026-01-12)
 
 
