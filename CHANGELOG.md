@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.8](https://github.com/equinor/videx-math/compare/v1.1.7...v1.1.8) (2026-03-27)
+
+
+### Bug Fixes
+
+* **122:** dependa security warnings ([#131](https://github.com/equinor/videx-math/issues/131)) ([46fd717](https://github.com/equinor/videx-math/commit/46fd717135c271aec54e5c5d7fb8c3a7c7e7e9e1))
+
 ## [1.1.7](https://github.com/equinor/videx-math/compare/v1.1.6...v1.1.7) (2026-03-23)
 
 
