@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.8](https://github.com/equinor/videx-math/compare/v1.1.7...v1.1.8) (2026-04-08)
+
+
+### Bug Fixes
+
+* **122:** dependa security warnings ([#131](https://github.com/equinor/videx-math/issues/131)) ([46fd717](https://github.com/equinor/videx-math/commit/46fd717135c271aec54e5c5d7fb8c3a7c7e7e9e1))
+* **npm:** bump handlebars from 4.7.8 to 4.7.9 ([#132](https://github.com/equinor/videx-math/issues/132)) ([482ca2a](https://github.com/equinor/videx-math/commit/482ca2af16281d311369f23d0058b6e9cc18e199))
+* **npm:** bump picomatch from 2.3.1 to 2.3.2 ([#130](https://github.com/equinor/videx-math/issues/130)) ([7ebde2b](https://github.com/equinor/videx-math/commit/7ebde2b5888fa37a8a47ce5437149e2fc4c16cdf))
+
 ## [1.1.7](https://github.com/equinor/videx-math/compare/v1.1.6...v1.1.7) (2026-03-23)
 
 
