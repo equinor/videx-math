@@ -2,15 +2,14 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
+    "rootDirs": ["./src", "./test"],
+    "types": ["vitest/globals"],
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noImplicitAny": true,
     "outDir": "./dist",
     "target": "ES6"
   },
-  "include": [
-    "src/*",
-    "postdocs.copyfiles.mjs"
-  ],
-  "exclude": ["node_modules"],
+  "include": ["src/*", "postdocs.copyfiles.mjs", "test/*"],
+  "exclude": ["node_modules"]
 }
