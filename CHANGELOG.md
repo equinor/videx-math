@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.9](https://github.com/equinor/videx-math/compare/v1.1.8...v1.1.9) (2026-07-21)
+
+
+### Bug Fixes
+
+* **156:** js yaml replace jest with vitest ([#158](https://github.com/equinor/videx-math/issues/158)) ([d5d5a24](https://github.com/equinor/videx-math/commit/d5d5a24f416a0fc93a8815622ced43d47b7c10d5))
+* **npm:** bump markdown-it from 14.1.1 to 14.2.0 ([#148](https://github.com/equinor/videx-math/issues/148)) ([1c12a1a](https://github.com/equinor/videx-math/commit/1c12a1ab848c294b85213bb7ebb5b9d2d20c1035))
+* **npm:** bump markdown-it from 14.2.0 to 14.3.0 ([#151](https://github.com/equinor/videx-math/issues/151)) ([20972dc](https://github.com/equinor/videx-math/commit/20972dc9a539e48070c69f0877896e86a515103e))
+* **taskless:** brace-expansion dependabot july 26 ([#159](https://github.com/equinor/videx-math/issues/159)) ([944608f](https://github.com/equinor/videx-math/commit/944608f098fa4535e05bcb8d7e8ca46f1f3e6b69))
+
 ## [1.1.8](https://github.com/equinor/videx-math/compare/v1.1.7...v1.1.8) (2026-04-08)
 
 
