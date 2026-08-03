@@ -117,7 +117,7 @@ export function degrees(rad: number): number {
  */
 export function nrad(rad: number): number {
   const v = rad % TAU;
-  return (v < 0 ? v + TAU : v);
+  return v < 0 ? v + TAU : v;
 }
 
 /**
@@ -172,7 +172,7 @@ export function seqI(steps: number): number[] {
  * @example
  * min([2, 1, 3]); // Returns 1
  */
-export function min(values: number[]): number
+export function min(values: number[]): number;
 
 /**
  * Retrieves the minimum value among a collection of values.
@@ -182,11 +182,11 @@ export function min(values: number[]): number
  * @example
  * min(2, 1, 3); // Returns 1
  */
-export function min(...values: number[]): number
+export function min(...values: number[]): number;
 
 export function min(a: number | number[], ...b: number[]): number {
   let min;
-  if(Array.isArray(a)) {
+  if (Array.isArray(a)) {
     min = a[0];
     for (let i = 1; i < a.length; i++) {
       if (a[i] < min) {
@@ -212,7 +212,7 @@ export function min(a: number | number[], ...b: number[]): number {
  * @example
  * min([2, 1, 3]); // Returns 3
  */
-export function max(values: number[]): number
+export function max(values: number[]): number;
 
 /**
  * Retrieves the maximum value among a collection of values.
@@ -222,11 +222,11 @@ export function max(values: number[]): number
  * @example
  * min(2, 1, 3); // Returns 3
  */
-export function max(...values: number[]): number
+export function max(...values: number[]): number;
 
 export function max(a: number | number[], ...b: number[]): number {
   let max;
-  if(Array.isArray(a)) {
+  if (Array.isArray(a)) {
     max = a[0];
     for (let i = 1; i < a.length; i++) {
       if (a[i] > max) {
@@ -252,7 +252,7 @@ export function max(a: number | number[], ...b: number[]): number {
  * @example
  * min([2, 1, 3]); // Returns [1, 3]
  */
-export function extent(values: number[]): [number, number]
+export function extent(values: number[]): [number, number];
 
 /**
  * Retrieves the extent of a collection of values.
@@ -262,11 +262,11 @@ export function extent(values: number[]): [number, number]
  * @example
  * min(2, 1, 3); // Returns [1, 3]
  */
-export function extent(...values: number[]): [number, number]
+export function extent(...values: number[]): [number, number];
 
 export function extent(a: number | number[], ...b: number[]): [number, number] {
   let min, max;
-  if(Array.isArray(a)) {
+  if (Array.isArray(a)) {
     min = max = a[0];
     for (let i = 1; i < a.length; i++) {
       if (a[i] < min) {
@@ -298,7 +298,7 @@ export function extent(a: number | number[], ...b: number[]): [number, number] {
  * @example
  * mean([2, 1, 3]); // Returns 2
  */
-export function mean(values: number[]): number
+export function mean(values: number[]): number;
 
 /**
  * Find the mean of a collection of values.
@@ -308,11 +308,11 @@ export function mean(values: number[]): number
  * @example
  * mean(2, 1, 3); // Returns 2
  */
-export function mean(...values: number[]): number
+export function mean(...values: number[]): number;
 
 export function mean(a: number | number[], ...b: number[]): number {
   let sum = 0;
-  if(Array.isArray(a)) {
+  if (Array.isArray(a)) {
     for (let i = 0; i < a.length; i++) {
       sum += a[i];
     }
