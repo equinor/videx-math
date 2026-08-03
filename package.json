@@ -28,7 +28,8 @@
     "lint": "eslint src --color",
     "predocs": "rimraf docs",
     "docs": "typedoc --out docs src",
-    "postdocs": "node postdocs.copyfiles.mjs"
+    "postdocs": "node postdocs.copyfiles.mjs",
+    "prettier": "prettier . --write"
   },
   "repository": {
     "type": "git",
