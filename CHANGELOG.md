@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.10](https://github.com/equinor/videx-math/compare/v1.1.9...v1.1.10) (2026-08-11)
+
+
+### Bug Fixes
+
+* **162:** add and run prettier ([#164](https://github.com/equinor/videx-math/issues/164)) ([cb8184c](https://github.com/equinor/videx-math/commit/cb8184c9878055146fcbb91084ba7e741bd52cd6))
+* high dependa warnings ([#168](https://github.com/equinor/videx-math/issues/168)) ([e269a4c](https://github.com/equinor/videx-math/commit/e269a4c87e895d36632d2d4ffc0c0b3475ee8a61))
+* **npm:** bump postcss from 8.5.19 to 8.5.25 ([#166](https://github.com/equinor/videx-math/issues/166)) ([889a617](https://github.com/equinor/videx-math/commit/889a61701da04b0d8077e9e373f0ea642ac9d4ee))
+
 ## [1.1.9](https://github.com/equinor/videx-math/compare/v1.1.8...v1.1.9) (2026-07-21)
 
 
