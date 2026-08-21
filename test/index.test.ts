@@ -20,6 +20,7 @@ import {
 test('clamp', () => {
   expect(clamp(2)).toBe(1);
   expect(clamp(0, 10, 20)).toBe(10);
+  expect(clamp(15, 10, 20)).toBe(15);
 });
 
 test('step', () => {
@@ -37,12 +38,14 @@ test('lerp', () => {
   expect(lerp(0, 10, 0)).toBe(0);
   expect(lerp(0, 10, 1)).toBe(10);
   expect(lerp(0, 10, 0.25)).toBe(2.5);
+  expect(lerp(0, 10, 2)).toBe(10);
 });
 
 test('inverseLerp', () => {
   expect(inverseLerp(0, 10, 5)).toBe(0.5);
   expect(inverseLerp(0, 10, 2.5)).toBe(0.25);
   expect(inverseLerp(0, 20, 15)).toBe(0.75);
+  expect(inverseLerp(0, 10, 20)).toBe(1);
 });
 
 test('round', () => {
@@ -66,6 +69,7 @@ test('degrees', () => {
 test('nrad', () => {
   expect(nrad(-Math.PI)).toBe(Math.PI);
   expect(nrad(0)).toBe(0);
+  expect(nrad(3 * Math.PI)).toBe(Math.PI);
 });
 
 test('seq', () => {
