@@ -10,6 +10,6 @@
     "outDir": "./dist",
     "target": "ES6"
   },
-  "include": ["src/*", "postdocs.copyfiles.mjs", "test/*"],
+  "include": ["src/*", "test/*"],
   "exclude": ["node_modules"]
 }
