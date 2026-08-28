@@ -1,5 +1,4 @@
 import typescript from '@rollup/plugin-typescript';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 
 // rollup.config.mjs
@@ -42,7 +41,6 @@ export default [
       format: 'umd',
     },
     plugins: [
-      nodeResolve(),
       typescript(),
       terser({
         mangle: false,
