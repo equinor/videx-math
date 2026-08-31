@@ -185,23 +185,23 @@ export function min(values: number[]): number;
 export function min(...values: number[]): number;
 
 export function min(a: number | number[], ...b: number[]): number {
-  let min;
+  let minimum;
   if (Array.isArray(a)) {
-    min = a[0];
+    minimum = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] < min) {
-        min = a[i];
+      if (a[i] < minimum) {
+        minimum = a[i];
       }
     }
   } else {
-    min = a;
+    minimum = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] < min) {
-        min = b[i];
+      if (b[i] < minimum) {
+        minimum = b[i];
       }
     }
   }
-  return min;
+  return minimum;
 }
 
 /**
@@ -225,23 +225,23 @@ export function max(values: number[]): number;
 export function max(...values: number[]): number;
 
 export function max(a: number | number[], ...b: number[]): number {
-  let max;
+  let maximum;
   if (Array.isArray(a)) {
-    max = a[0];
+    maximum = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] > max) {
-        max = a[i];
+      if (a[i] > maximum) {
+        maximum = a[i];
       }
     }
   } else {
-    max = a;
+    maximum = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] > max) {
-        max = b[i];
+      if (b[i] > maximum) {
+        maximum = b[i];
       }
     }
   }
-  return max;
+  return maximum;
 }
 
 /**
@@ -265,29 +265,29 @@ export function extent(values: number[]): [number, number];
 export function extent(...values: number[]): [number, number];
 
 export function extent(a: number | number[], ...b: number[]): [number, number] {
-  let min, max;
+  let minimum, maximum;
   if (Array.isArray(a)) {
-    min = max = a[0];
+    minimum = maximum = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] < min) {
-        min = a[i];
+      if (a[i] < minimum) {
+        minimum = a[i];
       }
-      if (a[i] > max) {
-        max = a[i];
+      if (a[i] > maximum) {
+        maximum = a[i];
       }
     }
   } else {
-    min = max = a;
+    minimum = maximum = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] < min) {
-        min = b[i];
+      if (b[i] < minimum) {
+        minimum = b[i];
       }
-      if (b[i] > max) {
-        max = b[i];
+      if (b[i] > maximum) {
+        maximum = b[i];
       }
     }
   }
-  return [min, max];
+  return [minimum, maximum];
 }
 
 /**
