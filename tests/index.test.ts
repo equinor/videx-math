@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import {
   clamp,
   step,
@@ -48,7 +47,7 @@ test('inverseLerp', () => {
 test('round', () => {
   expect(round(Math.PI, 1)).toBe(3.1);
   expect(round(Math.PI, 2)).toBe(3.14);
-  expect(round(Math.PI, 3)).toBe(3.142);
+  expect(round(Math.PI, 3)).toBe(3.142); // oxlint-disable-line oxc/approx-constant
 });
 
 test('radians', () => {
