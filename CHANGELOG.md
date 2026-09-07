@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.12](https://github.com/equinor/videx-math/compare/v1.1.11...v1.1.12) (2026-09-07)
+
+
+### Bug Fixes
+
+* debug release workflow ([#179](https://github.com/equinor/videx-math/issues/179)) ([d55ff73](https://github.com/equinor/videx-math/commit/d55ff739a0b2aeec1c8ebfc6e352df0e472572b7))
+
 ## [1.1.11](https://github.com/equinor/videx-math/compare/v1.1.10...v1.1.11) (2026-09-01)
 
 
