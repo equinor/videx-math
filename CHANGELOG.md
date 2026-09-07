@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.11](https://github.com/equinor/videx-math/compare/v1.1.10...v1.1.11) (2026-09-01)
+
+
+### Bug Fixes
+
+* **170:** remove unnecessary node-resolve and rimraf dependencies ([#173](https://github.com/equinor/videx-math/issues/173)) ([0f7c716](https://github.com/equinor/videx-math/commit/0f7c716cd973e39a6660910c51f31ad0470285df))
+* replace eslint with oxlint ([#177](https://github.com/equinor/videx-math/issues/177)) ([734de95](https://github.com/equinor/videx-math/commit/734de95bd608ebeb8891daa5488db23e7f96bf30))
+
 ## [1.1.10](https://github.com/equinor/videx-math/compare/v1.1.9...v1.1.10) (2026-08-11)
 
 
