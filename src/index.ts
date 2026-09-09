@@ -5,7 +5,7 @@ import { RAD2DEG, DEG2RAD, TAU } from './const';
  * @param value Value to clamp
  * @param min Minimum value (Default: 0)
  * @param max Maximum value (Default: 1)
- * @return Clamped value
+ * @returns Clamped value
  *
  * @example
  * clamp(8, 3, 7); // Returns: 7
@@ -24,7 +24,7 @@ export function clamp(value: number, min: number = 0, max: number = 1): number {
  * Generate a step function by comparing two values.
  * @param edge Edge of the step function
  * @param x Value used to generate the step function
- * @return Returns either 0 or 1
+ * @returns Returns either 0 or 1
  */
 export function step(edge: number, x: number): number {
   return x >= edge ? 1 : 0;
@@ -35,7 +35,7 @@ export function step(edge: number, x: number): number {
  * @param edge0 Lower edge of the Hermite function
  * @param edge1 Upper edge of the Hermite function
  * @param x Source value for interpolation
- * @return Hermite interpolated value
+ * @returns Hermite interpolated value
  */
 export function smoothstep(edge0: number, edge1: number, x: number): number {
   const t = clamp((x - edge0) / (edge1 - edge0));
@@ -47,7 +47,7 @@ export function smoothstep(edge0: number, edge1: number, x: number): number {
  * @param a Number to interpolate from
  * @param b Number to interpolate to
  * @param t Interpolation parameter, 0 = a and 1 = b
- * @return The interpolated value
+ * @returns The interpolated value
  *
  * @example
  * lerp(2, 4, 0.5); // Returns 3
@@ -62,7 +62,7 @@ export function lerp(a: number, b: number, t: number): number {
  * @param a Start value
  * @param b End value
  * @param value Value between start and end
- * @return Percentage of value between start and end
+ * @returns Percentage of value between start and end
  *
  * @example
  * inverseLerp(2, 4, 3); // Returns 0.5
@@ -111,13 +111,13 @@ export function degrees(rad: number): number {
 }
 
 /**
- * Normalise an angle to be between -π and +π.
+ * Normalise an angle to be between 0 and 2π.
  * @param rad Angle in radians
- * @return Normalised angle
+ * @returns Normalised angle
  */
 export function nrad(rad: number): number {
   const v = rad % TAU;
-  return (v < 0 ? v + TAU : v);
+  return v < 0 ? v + TAU : v;
 }
 
 /**
@@ -172,7 +172,7 @@ export function seqI(steps: number): number[] {
  * @example
  * min([2, 1, 3]); // Returns 1
  */
-export function min(values: number[]): number
+export function min(values: number[]): number;
 
 /**
  * Retrieves the minimum value among a collection of values.
@@ -182,26 +182,26 @@ export function min(values: number[]): number
  * @example
  * min(2, 1, 3); // Returns 1
  */
-export function min(...values: number[]): number
+export function min(...values: number[]): number;
 
 export function min(a: number | number[], ...b: number[]): number {
-  let min;
-  if(Array.isArray(a)) {
-    min = a[0];
+  let minimum;
+  if (Array.isArray(a)) {
+    minimum = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] < min) {
-        min = a[i];
+      if (a[i] < minimum) {
+        minimum = a[i];
       }
     }
   } else {
-    min = a;
+    minimum = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] < min) {
-        min = b[i];
+      if (b[i] < minimum) {
+        minimum = b[i];
       }
     }
   }
-  return min;
+  return minimum;
 }
 
 /**
@@ -210,9 +210,9 @@ export function min(a: number | number[], ...b: number[]): number {
  * @returns Maximum value
  *
  * @example
- * min([2, 1, 3]); // Returns 3
+ * max([2, 1, 3]); // Returns 3
  */
-export function max(values: number[]): number
+export function max(values: number[]): number;
 
 /**
  * Retrieves the maximum value among a collection of values.
@@ -220,28 +220,28 @@ export function max(values: number[]): number
  * @returns Maximum value
  *
  * @example
- * min(2, 1, 3); // Returns 3
+ * max(2, 1, 3); // Returns 3
  */
-export function max(...values: number[]): number
+export function max(...values: number[]): number;
 
 export function max(a: number | number[], ...b: number[]): number {
-  let max;
-  if(Array.isArray(a)) {
-    max = a[0];
+  let maximum;
+  if (Array.isArray(a)) {
+    maximum = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] > max) {
-        max = a[i];
+      if (a[i] > maximum) {
+        maximum = a[i];
       }
     }
   } else {
-    max = a;
+    maximum = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] > max) {
-        max = b[i];
+      if (b[i] > maximum) {
+        maximum = b[i];
       }
     }
   }
-  return max;
+  return maximum;
 }
 
 /**
@@ -250,9 +250,9 @@ export function max(a: number | number[], ...b: number[]): number {
  * @returns Extent on format [min, max]
  *
  * @example
- * min([2, 1, 3]); // Returns [1, 3]
+ * extent([2, 1, 3]); // Returns [1, 3]
  */
-export function extent(values: number[]): [number, number]
+export function extent(values: number[]): [number, number];
 
 /**
  * Retrieves the extent of a collection of values.
@@ -260,34 +260,34 @@ export function extent(values: number[]): [number, number]
  * @returns Extent on format [min, max]
  *
  * @example
- * min(2, 1, 3); // Returns [1, 3]
+ * extent(2, 1, 3); // Returns [1, 3]
  */
-export function extent(...values: number[]): [number, number]
+export function extent(...values: number[]): [number, number];
 
 export function extent(a: number | number[], ...b: number[]): [number, number] {
-  let min, max;
-  if(Array.isArray(a)) {
-    min = max = a[0];
+  let minimum, maximum;
+  if (Array.isArray(a)) {
+    minimum = maximum = a[0];
     for (let i = 1; i < a.length; i++) {
-      if (a[i] < min) {
-        min = a[i];
+      if (a[i] < minimum) {
+        minimum = a[i];
       }
-      if (a[i] > max) {
-        max = a[i];
+      if (a[i] > maximum) {
+        maximum = a[i];
       }
     }
   } else {
-    min = max = a;
+    minimum = maximum = a;
     for (let i = 0; i < b.length; i++) {
-      if (b[i] < min) {
-        min = b[i];
+      if (b[i] < minimum) {
+        minimum = b[i];
       }
-      if (b[i] > max) {
-        max = b[i];
+      if (b[i] > maximum) {
+        maximum = b[i];
       }
     }
   }
-  return [min, max];
+  return [minimum, maximum];
 }
 
 /**
@@ -298,7 +298,7 @@ export function extent(a: number | number[], ...b: number[]): [number, number] {
  * @example
  * mean([2, 1, 3]); // Returns 2
  */
-export function mean(values: number[]): number
+export function mean(values: number[]): number;
 
 /**
  * Find the mean of a collection of values.
@@ -308,11 +308,11 @@ export function mean(values: number[]): number
  * @example
  * mean(2, 1, 3); // Returns 2
  */
-export function mean(...values: number[]): number
+export function mean(...values: number[]): number;
 
 export function mean(a: number | number[], ...b: number[]): number {
   let sum = 0;
-  if(Array.isArray(a)) {
+  if (Array.isArray(a)) {
     for (let i = 0; i < a.length; i++) {
       sum += a[i];
     }

@@ -1,5 +1,39 @@
 # Changelog
 
+## [1.1.12](https://github.com/equinor/videx-math/compare/v1.1.11...v1.1.12) (2026-09-07)
+
+
+### Bug Fixes
+
+* debug release workflow ([#179](https://github.com/equinor/videx-math/issues/179)) ([d55ff73](https://github.com/equinor/videx-math/commit/d55ff739a0b2aeec1c8ebfc6e352df0e472572b7))
+
+## [1.1.11](https://github.com/equinor/videx-math/compare/v1.1.10...v1.1.11) (2026-09-01)
+
+
+### Bug Fixes
+
+* **170:** remove unnecessary node-resolve and rimraf dependencies ([#173](https://github.com/equinor/videx-math/issues/173)) ([0f7c716](https://github.com/equinor/videx-math/commit/0f7c716cd973e39a6660910c51f31ad0470285df))
+* replace eslint with oxlint ([#177](https://github.com/equinor/videx-math/issues/177)) ([734de95](https://github.com/equinor/videx-math/commit/734de95bd608ebeb8891daa5488db23e7f96bf30))
+
+## [1.1.10](https://github.com/equinor/videx-math/compare/v1.1.9...v1.1.10) (2026-08-11)
+
+
+### Bug Fixes
+
+* **162:** add and run prettier ([#164](https://github.com/equinor/videx-math/issues/164)) ([cb8184c](https://github.com/equinor/videx-math/commit/cb8184c9878055146fcbb91084ba7e741bd52cd6))
+* high dependa warnings ([#168](https://github.com/equinor/videx-math/issues/168)) ([e269a4c](https://github.com/equinor/videx-math/commit/e269a4c87e895d36632d2d4ffc0c0b3475ee8a61))
+* **npm:** bump postcss from 8.5.19 to 8.5.25 ([#166](https://github.com/equinor/videx-math/issues/166)) ([889a617](https://github.com/equinor/videx-math/commit/889a61701da04b0d8077e9e373f0ea642ac9d4ee))
+
+## [1.1.9](https://github.com/equinor/videx-math/compare/v1.1.8...v1.1.9) (2026-07-21)
+
+
+### Bug Fixes
+
+* **156:** js yaml replace jest with vitest ([#158](https://github.com/equinor/videx-math/issues/158)) ([d5d5a24](https://github.com/equinor/videx-math/commit/d5d5a24f416a0fc93a8815622ced43d47b7c10d5))
+* **npm:** bump markdown-it from 14.1.1 to 14.2.0 ([#148](https://github.com/equinor/videx-math/issues/148)) ([1c12a1a](https://github.com/equinor/videx-math/commit/1c12a1ab848c294b85213bb7ebb5b9d2d20c1035))
+* **npm:** bump markdown-it from 14.2.0 to 14.3.0 ([#151](https://github.com/equinor/videx-math/issues/151)) ([20972dc](https://github.com/equinor/videx-math/commit/20972dc9a539e48070c69f0877896e86a515103e))
+* **taskless:** brace-expansion dependabot july 26 ([#159](https://github.com/equinor/videx-math/issues/159)) ([944608f](https://github.com/equinor/videx-math/commit/944608f098fa4535e05bcb8d7e8ca46f1f3e6b69))
+
 ## [1.1.8](https://github.com/equinor/videx-math/compare/v1.1.7...v1.1.8) (2026-04-08)
 
 
