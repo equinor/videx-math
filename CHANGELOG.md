@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/equinor/videx-math/compare/v1.1.12...v1.2.0) (2026-09-10)
+
+
+### Features
+
+* **unit-tests:** add unit tests to be more complete ([#154](https://github.com/equinor/videx-math/issues/154)) ([4523fa1](https://github.com/equinor/videx-math/commit/4523fa199967171e0e31f98047700aa063aa3117))
+
 ## [1.1.12](https://github.com/equinor/videx-math/compare/v1.1.11...v1.1.12) (2026-09-07)
 
 
