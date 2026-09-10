@@ -25,6 +25,8 @@
     "pub": "npm publish --access=public",
     "test": "vitest run",
     "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "coverage:ci": "vitest run --coverage",
     "lint": "oxlint",
     "predocs": "node scripts/remove.mjs docs",
     "docs": "typedoc --out docs src",
@@ -47,6 +49,7 @@
   "devDependencies": {
     "@rollup/plugin-terser": "^1.0.0",
     "@rollup/plugin-typescript": "^12.3.0",
+    "@vitest/coverage-v8": "4.1.10",
     "oxlint": "^1.80.0",
     "prettier": "^3.9.6",
     "rollup": "^4.60.0",

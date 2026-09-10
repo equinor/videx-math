@@ -4,5 +4,14 @@ export default defineConfig({
   test: {
     globals: true,
     include: ['tests/**/*.test.ts'],
+    reporter: ['default', 'junit'],
+    outputFile: {
+      junit: 'test-results/junit.xml',
+    },
+    coverage: {
+      provider: 'v8',
+      reporter: [['cobertura', { file: 'Cobertura.xml' }]],
+      reportsDirectory: 'coverage',
+    },
   },
 });
