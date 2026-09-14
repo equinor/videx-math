@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/equinor/videx-math/compare/v1.1.12...v1.2.0) (2026-09-14)
+
+
+### Features
+
+* **unit-tests:** add unit tests to be more complete ([#154](https://github.com/equinor/videx-math/issues/154)) ([4523fa1](https://github.com/equinor/videx-math/commit/4523fa199967171e0e31f98047700aa063aa3117))
+
+
+### Bug Fixes
+
+* align oxlint configs ([#186](https://github.com/equinor/videx-math/issues/186)) ([bda0c09](https://github.com/equinor/videx-math/commit/bda0c09e228086ece2b5dbbced9f69bd3df8450f))
+
 ## [1.1.12](https://github.com/equinor/videx-math/compare/v1.1.11...v1.1.12) (2026-09-07)
 
 
