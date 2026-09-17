@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/equinor/videx-math/compare/v1.2.0...v1.2.1) (2026-09-17)
+
+
+### Bug Fixes
+
+* **ci:** make release publishing restartable ([#189](https://github.com/equinor/videx-math/issues/189)) ([b2d9d50](https://github.com/equinor/videx-math/commit/b2d9d50b48b68cbe18c5d0d592804f2e6f2d8454))
+* **taskless:** bump vitest and @vitest/coverage-v8 to 5.0.0; set package type to module ([#192](https://github.com/equinor/videx-math/issues/192)) ([438d491](https://github.com/equinor/videx-math/commit/438d491cb9318c4ef3e3be70a97ad72d8d9db2fa))
+
 ## [1.2.0](https://github.com/equinor/videx-math/compare/v1.1.12...v1.2.0) (2026-09-14)
 
 
