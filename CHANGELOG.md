@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/equinor/videx-math/compare/v1.2.1...v1.2.2) (2026-09-23)
+
+
+### Bug Fixes
+
+* **195:** fix CommonJs file name and make esm default ([#196](https://github.com/equinor/videx-math/issues/196)) ([712d7f3](https://github.com/equinor/videx-math/commit/712d7f375d872d6f703d90fcaec4871fe420eee5))
+
 ## [1.2.1](https://github.com/equinor/videx-math/compare/v1.2.0...v1.2.1) (2026-09-17)
 
 
