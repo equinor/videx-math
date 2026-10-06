@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.3](https://github.com/equinor/videx-math/compare/v1.2.2...v1.2.3) (2026-10-05)
+
+
+### Bug Fixes
+
+* **npm:** bump brace-expansion from 5.0.9 to 5.0.12 ([#202](https://github.com/equinor/videx-math/issues/202)) ([fa13ba4](https://github.com/equinor/videx-math/commit/fa13ba48584d0392cb7e6e58d0112ad29cb44788))
+* **npm:** bump markdown-it from 14.3.0 to 14.3.2 ([#200](https://github.com/equinor/videx-math/issues/200)) ([c1c0398](https://github.com/equinor/videx-math/commit/c1c0398b13e36af0834fbf641e3ee4ef6aa6627f))
+
 ## [1.2.2](https://github.com/equinor/videx-math/compare/v1.2.1...v1.2.2) (2026-09-23)
 
 
