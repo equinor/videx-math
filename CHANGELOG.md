@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/equinor/videx-math/compare/v1.2.3...v1.2.4) (2026-10-06)
+
+
+### Bug Fixes
+
+* **npm:** bump source-map-js from 1.2.1 to 1.2.2 ([#203](https://github.com/equinor/videx-math/issues/203)) ([551f9b3](https://github.com/equinor/videx-math/commit/551f9b3a95da244a8f16cfba2777fd095902c648))
+
 ## [1.2.3](https://github.com/equinor/videx-math/compare/v1.2.2...v1.2.3) (2026-10-05)
 
 
