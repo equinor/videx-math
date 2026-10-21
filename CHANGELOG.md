@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.5](https://github.com/equinor/videx-math/compare/v1.2.4...v1.2.5) (2026-10-21)
+
+
+### Bug Fixes
+
+* **npm:** bump markdown-it from 14.3.2 to 14.3.3 ([#208](https://github.com/equinor/videx-math/issues/208)) ([d7defba](https://github.com/equinor/videx-math/commit/d7defba15ec6e5d4211d768f9c87b1a5d077bb30))
+* **npm:** bump vite from 8.3.0 to 8.3.4 ([#206](https://github.com/equinor/videx-math/issues/206)) ([88655da](https://github.com/equinor/videx-math/commit/88655da1c642dffe354a3284623d32295f70d03c))
+
 ## [1.2.4](https://github.com/equinor/videx-math/compare/v1.2.3...v1.2.4) (2026-10-06)
 
 
