@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.6](https://github.com/equinor/videx-math/compare/v1.2.5...v1.2.6) (2026-10-27)
+
+
+### Bug Fixes
+
+* **npm:** bump @vitest/mocker, @vitest/coverage-v8 and vitest ([#210](https://github.com/equinor/videx-math/issues/210)) ([2cefaba](https://github.com/equinor/videx-math/commit/2cefababced584678d0cf807d8ca24d13c4db4a7))
+* **npm:** bump serialize-javascript from 7.0.5 to 7.1.4 ([#212](https://github.com/equinor/videx-math/issues/212)) ([866b7b1](https://github.com/equinor/videx-math/commit/866b7b1e6581cbeb476751f8ee586e0dda3aa36b))
+
 ## [1.2.5](https://github.com/equinor/videx-math/compare/v1.2.4...v1.2.5) (2026-10-21)
 
 
